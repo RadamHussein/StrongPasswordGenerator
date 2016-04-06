@@ -1,0 +1,164 @@
+
+
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 100%;
+}
+
+.page-container {
+	position: fixed;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 100vh;
+	width: 100vw;
+}
+
+h1 {
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+header {
+	positon: fixed;
+    background-color: #B71C1C;
+	width: 100%;
+	max-height: 30%;
+	border-top-width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.26);
+}
+
+#image {
+	position: relative;
+	background-image: url(squirelCompressed.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #757575;
+	height: 100vh;
+}
+
+#main-div {
+	position: absolute;
+	height: 200px;
+	width: 50%;
+	margin-left: 25%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+	opacity: 0.9;
+	background-color: white;
+	top: 20%;
+	overflow: scroll;
+}
+
+#btn-container {
+	height: 100px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.btn {
+	display: block;
+/*
+	position: absolute;
+*/
+	margin-left: auto;
+	margin-right: auto;
+/*
+	left: 30%;
+	margin-top: 5%;
+*/
+	margin-top: 10px;
+  	background: #D32F2F;
+  	background-image: -webkit-linear-gradient(top, #D32F2F, #B71c1c);
+  	background-image: -moz-linear-gradient(top, #D32F2F, #B71c1c);
+  	background-image: -ms-linear-gradient(top, #D32F2F, #B71c1c);
+  	background-image: -o-linear-gradient(top, #D32F2F, #B71c1c);
+  	background-image: linear-gradient(to bottom, #D32F2F, #B71c1c);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    opacity: 1.0;
+    z-index: 4;
+}
+
+.btn:focus {
+	outline:0;
+}
+
+.btn:hover {
+  background: #F44336;
+  text-decoration: none;
+}
+
+#output-container {
+	position: relative;
+	height: 100px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+/*
+	padding-top: 10px;
+*/
+	padding-right: 5%;
+	padding-bottom: 0px;
+	padding-left: 5%;
+	text-align: center;
+	font-size: 50px;
+	line-height: 100px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 949px){
+	#output-container {
+		font-size: 30px;
+	}
+	#main-div {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#output-container {
+		font-size: 20px;
+	}
+	.btn {
+		font-size: 15px;
+		padding: 5px 10px 5px 10px;
+	}
+	#main-div {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+	.page-container {
+		position: absolute;
+	}
+}
